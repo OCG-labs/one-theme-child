@@ -1,12 +1,16 @@
 <?php
 
 /**
- * Child Function 
+ * Child Function
  * @package Wordpress
  * @subpackage one-theme
  * @since 1.0
  * @author Matthew Hansen
  */
+
+if (file_exists(dirname( __FILE__ ) . '/lib/modules/loadModules.php')){
+  require_once dirname( __FILE__ ) . '/lib/modules/loadModules.php';
+}
 
 if(  !is_admin()  ) :
 
