@@ -1,4 +1,4 @@
-IputtyFrame-Child
+One-Theme-Child
 =================
 
-Child Theme for iputtyFrame WordPress
+The child of One Theme
