@@ -7,14 +7,13 @@
  * @author Matthew Hansen
  */
 
-
 if ( !function_exists( 'otc_include_modules' ) ) :
 /*
  * Use 'RecursiveDirectoryIterator' if PHP Version >= 5.2.11
  */
 function otc_include_modules() {
   // Include all modules from the theme (NOT the child themes)
-  $modules_path = new RecursiveDirectoryIterator( get_template_directory() . '/lib/modules/' );
+  $modules_path = new RecursiveDirectoryIterator( get_stylesheet_directory() . '/lib/modules/' );
   $recIterator  = new RecursiveIteratorIterator( $modules_path );
   $regex        = new RegexIterator( $recIterator, '/\/module.php$/i' );
 
@@ -30,7 +29,7 @@ if ( !function_exists( 'otc_include_modules_fallback' ) ) :
  */
 function otc_include_modules_fallback() {
   // Include all modules from the theme (NOT the child themes)
-  foreach( glob( get_template_directory() . '/lib/modules/*/module.php' ) as $module ) {
+  foreach( glob( get_stylesheet_directory() . '/lib/modules/*/module.php' ) as $module ) {
     require_once $module;
   }
 }
