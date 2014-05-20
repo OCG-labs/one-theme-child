@@ -1,42 +1,27 @@
 /*
 Theme Name:     One Theme Child
 Theme URI:      http://ocgcreative.com/
-Description:    Child theme for the One Theme
-Author:         Matthew Hansen @ocgcreative
+Description:    Child of One theme
+Author:         Matthew Hansen & Bryan Haskin
 Author URI:     http://ocgcreative.com
 Template:       one-theme
 Version:        1.0
 */
 
 @import url("../one-theme/style.css");
-@import url(http://fonts.googleapis.com/css?family=Arimo:700|Noticia+Text:400,700);
 
-/*
-font-family: 'Arimo', sans-serif;
-font-family: 'Noticia Text', serif;
-font-family: Georgia, Times, "Times New Roman", serif;
-*/
 
 /*
 =================================================
 G E N E R A L
 =================================================
 */
-body {
-  font-family: 'Noticia Text', serif;
-  font-size: 16px;
-}
-
-
 
 /*
 =================================================
 H E A D E R
 =================================================
 */
-header {
-  background: url('images/Ace_Nav_BG.png') repeat-x top;
-}
 
 /*
 =================================================
@@ -44,65 +29,17 @@ F O O T E R
 =================================================
 */
 
-footer {
-  background: url('images/Ace_Footer_BG.jpg') repeat-x top;
-  color: #fff;
-  padding: 1px 0 0 0; 
-}
-
 /*
 =================================================
 H O M E P A G E
 =================================================
 */
-.hp_section-1 {
-  position: relative;
-  bottom: 57px;
-  z-index: -5;
-  margin-bottom: -57px;
-}
-
-.hp_section-3 {
-  background: url('images/AceA_BlueSec_LayerPhoto.jpg') no-repeat center center;
-  background-size: 100%;
-  color: #fff;
-}
-
-.hp_section-5 {
-  background: url('images/AceA_RedSec_LayerPhoto.jpg') no-repeat center center;
-  background-size: 100%;
-}
 
 /*
 =================================================
 M A I N  N A V I G A T I O N
 =================================================
 */
-.navbar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 0;
-  border: 1px solid transparent;
-}
-
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #85d581;
-  background-color: transparent;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: #575969;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 13px;
-}
 
 /*
 =================================================
@@ -110,233 +47,14 @@ B L O G
 =================================================
 */
 
-.boxed_post {
-  background: rgba(255,255,255,.4);
-  border: 2px solid #DEDEDE;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 15px 0;
-}
-
-.boxed_post .well {
-  padding: 10px 10px 0 10px;
-}
-
-.boxed_post h3 {
-  margin: 8px 0 0 0;
-  font-family: 'Oleo Script', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-a.post_link {
-  color: #EF4323;
-}
-
-.postmetadata {
-  margin: 10px 0;
-}
-
 /*
 =================================================
 S I D E B A R
 =================================================
 */
 
-#sidebar {
-  margin-top: 10px;
-}
-
-.st_sidebar {
-  background: rgba(255,255,255,.4);
-  border: 2px solid #DEDEDE;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 15px 0;
-}
-
-.st_sidebar_title {
-  margin: 0 0 10px 0;
-}
-
-/*
-=================================================
-I S O T O P E
-=================================================
-*/
-
-/* make the well swell */
-#isotope .well {
-  border-color:#c9c9c9;
-}
-
-
-#isotope .post h4 {
-  margin-bottom: 9px;
-}
-
-#isotope .post h4 a {
-  color: #333;
-}
-
-#isotope .post img.image {
-  max-width: 100%;
-  margin-top: 9px;
-}
-
-#isotope .info {
-  padding:4px;
-}
-#isotope .img-center {
-  margin:0 auto;
-}
-/* Isotope Transitions
-------------------------------- */
-.isotope,
-.isotope .item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-
-.isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
-}
-
-.isotope .item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:         top, left, opacity;
-          transition-property:         transform, opacity;
-}
-
-
-/* responsive media queries */
-
-@media (max-width: 480px) {
-
-}
-
-@media (max-width: 767px) {
- header h1 small {
-    display: block;
-  }
-
-  header div.description {
-    padding-top: 9px;
-    padding-bottom: 4px;
-  }
-}
-
-@media (max-width: 980px) {
-  header p.lead span {
-    display: block;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 768px) {
-
-}
-
-
-@media (min-width: 768px) and (max-width: 980px) {
-  #isotope .col-sm-6 {
-    width: 300px;
-  }
-}
-
-@media (min-width: 980px) and (max-width: 1200px) {
- #isotope .col-md-6 {
-    width: 300px;
-  }
-}
-
-@media (min-width: 1200px) {
-  #isotope .col-lg-6 {
-    width: 270px;
-  }
-}
-
-
-
 /*
 =================================================
 C O M M E N T S
 =================================================
 */
-
-.commentlist {
-  padding: 0;
-}
-
-.commentlist .comment-body {
-  margin-bottom: 5px;
-}
-
-.commentlist li {
-  list-style-type: none;
-  background: rgba(255,255,255,.6);
-  border-bottom: 3px solid #DEDEDE;
-  margin-bottom: 5px;
-  padding: 5px 10px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.commentlist .children li{
-  border-bottom: 0;
-  background: rgba(91, 89, 89, .1);
-  border-left: 3px solid green;
-  width: 99%;
-}
-
-.commentlist .comment-reply-link {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.428571429;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-   color: #333333;
-  background-color: #ffffff;
-  border-color: #cccccc;
-}
-
-.commentlist .comment-reply-link:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.commentlist .comment-reply-link:hover,
-.commentlist .comment-reply-link:focus {
-  color: #333333;
-  text-decoration: none;
-   color: #333333;
-  background-color: #ebebeb;
-  border-color: #adadad;
-}
-.commentlist .comment-reply-link:active,
-.commentlist .comment-reply-link.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
