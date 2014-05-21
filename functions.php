@@ -19,7 +19,6 @@ $theOneChild = new TheOneChild;
 
 if(  !is_admin()  ) :
   $theOneChild->assets();
-  //var_dump($theOneChild->getDirectory());
 
   if( !function_exists( 'otc_load_child_js' ) ) :
 
