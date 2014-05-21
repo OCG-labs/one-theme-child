@@ -10,8 +10,6 @@
 
 require_once dirname( __FILE__ ) . '/lib/modules/loadModules.php';
 
-require_once dirname( __FILE__ ) . '/lib/options/ot-options-settings.php';
-
 require_once dirname( __FILE__ ) . '/lib/core.php';
 
 global $theOneChild;
