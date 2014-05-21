@@ -8,11 +8,18 @@
  * @author Matthew Hansen
  */
 
-if (file_exists(dirname( __FILE__ ) . '/lib/modules/loadModules.php')){
-  require_once dirname( __FILE__ ) . '/lib/modules/loadModules.php';
-}
+require_once dirname( __FILE__ ) . '/lib/modules/loadModules.php';
+
+require_once dirname( __FILE__ ) . '/lib/options/ot-options-settings.php';
+
+require_once dirname( __FILE__ ) . '/lib/core.php';
+
+global $theOneChild;
+$theOneChild = new TheOneChild;
 
 if(  !is_admin()  ) :
+  $theOneChild->assets();
+  //var_dump($theOneChild->getDirectory());
 
   if( !function_exists( 'otc_load_child_js' ) ) :
 
