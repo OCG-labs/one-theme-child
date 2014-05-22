@@ -14,7 +14,7 @@ require_once dirname( __FILE__ ) . '/lib/core.php';
 
 global $theOneChild;
 $theOneChild = new TheOneChild;
-
+$theOneChild->loadModules();
 if(  !is_admin()  ) :
   $theOneChild->assets();
 
