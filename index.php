@@ -4,7 +4,7 @@
  * @package Wordpress
  * @subpackage one-theme
  * @since 1.0
- * @author Matthew Hansen
+ * @author Matthew Hansen & Bryan Haskin
  */
 
 get_header(); ?>
@@ -44,8 +44,5 @@ get_header(); ?>
 
 	<?php
 	endif; ?>
-
-<?php
-get_sidebar(); ?>
 
 <?php get_footer(); ?>
