@@ -8,9 +8,9 @@
  * @author Matthew Hansen & Bryan Haskin
  */
 
-
+// All child functions calls go here
 function otChildFunctions() {
-    require_once dirname( __FILE__ ) . '/lib/modules/loader.php'; // Legacy Loader
+
 }
 
 add_action( 'after_setup_theme', 'otChildFunctions', 10 );
