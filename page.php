@@ -9,9 +9,14 @@
 
 get_header(); ?>
 
-<section class="container-fluid background-white">
-	<div class="row padding-top1">
+<section class="container-fluid">
+	<div class="row">
 	  <div class="container">
+		<div class="row">
+		  <div class="page-header">
+		    <h1><?php the_title(); ?></h1>
+		  </div>
+		</div>
 	  	<div class="row">
 	  	  <div class="col-md-12">
 				<?php if (have_posts()) : ?>
