@@ -9,15 +9,25 @@
 
 get_header(); ?>
 
-	<?php
-	if (have_posts()) : while (have_posts()) : the_post(); ?>
+<section class="container-fluid background-white">
+	<div class="row padding-top1">
+	  <div class="container">
+	  	<div class="row">
+	  	  <div class="col-md-12">
+				<?php if (have_posts()) : ?>
+					<?php while (have_posts()) : the_post(); ?>
+						<?php the_content(); ?>
+					<?php endwhile; ?>
+					<?php else : ?>
+				<?php endif; ?>
+	  	  </div>
+	  	</div>
+	  </div>
+	</div>
+</section>
 
-		<h1><?php the_title(); ?></h1>
 
-		<?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
 
-	<?php
-	endwhile; endif; ?>
 
 <?php
 get_footer(); ?>

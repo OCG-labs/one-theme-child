@@ -8,12 +8,12 @@
  * @author Matthew Hansen
  */
 ?>
+</main>
 
-<footer>
-
+<footer class="container-fluid">
+    
 </footer>
 
-</main>
 <?php wp_footer(); ?>
 
   </body>

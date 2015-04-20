@@ -7,6 +7,8 @@
  * @since 1.0
  * @author Matthew Hansen & Bryan Haskin
  */
+
+
 ?>
 
 <!DOCTYPE html>
@@ -26,9 +28,8 @@
 
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-
-<?php wp_head(); ?>
-<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+    <?php wp_head(); ?>
+    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 </head>
 
 <body <?php body_class(); ?>>
@@ -37,10 +38,12 @@
     <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 <![endif]-->
 
-<header>
-    <?php $ot_navigation = new Bootstrap_Navigation();
-      $ot_navigation->menu_output();
-     ?>
+<header class="container-fluid">
+    <div class="row">
+        <?php $ot_navigation = new Bootstrap_Navigation();
+        $ot_navigation->menu_output();
+        ?>
+    </div>
 </header>
 
 <main>
