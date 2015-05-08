@@ -20,4 +20,4 @@ function otc_load_child_js() {
     wp_enqueue_script( 'child_js' );
 }
 
-add_action( 'init', 'otc_load_child_js', 12 );
+add_action( 'wp_enqueue_scripts', 'otc_load_child_js', 12 );
